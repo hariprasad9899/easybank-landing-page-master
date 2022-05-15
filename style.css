@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html,body,main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Public Sans', sans-serif;
+}
+
+.partOne {
+    width: 100%;
+    z-index: 3;
+    padding: 10px 0px 0px 0px;
+    border: 1px solid black;
+    background-color: white;
+}
+.partOne .menu {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+.comLogo,
+.navigations,
+.reqButton {
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hamburger {
+    display: none;
+}
+.comLogo {
+    width: 30%;
+}
+.navigations {
+    width: 50%;
+}
+.reqButton {
+    width: 30%;
+}
+.navigations nav a {
+    color: hsl(233, 8%, 62%);
+    text-decoration: none;
+    margin: 12px;
+    font-size: 0.9em;
+    font-weight: 100;
+}
+button {
+    width: 180px;
+    padding: 15px 10px 15px 10px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Public Sans', sans-serif;
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+button:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+.navigations nav a:hover,
+.navigations nav .active {
+    text-decoration: underline;
+    text-decoration-color: hsl(136, 65%, 51%);
+    text-underline-offset: 22px;
+    text-decoration-thickness: 4px;
+    color: black;
+}
+.navigations nav a:hover {
+    text-decoration-color: hsl(136, 46%, 56%);
+}
+.mobMenu {
+    display: none;
+}
+
+/* Part Two */
+
+.partTwo {
+    width: 100%;
+    display: flex;
+    margin-left: 5%;
+}
+
+.nextGen {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.phones {
+    width: 55%;
+}
+.content {
+    width: 90%;
+    border: 1px solid black;
+}
+.content h1 {
+    font-size: 3em;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+    padding-right: 20%;
+}
+.content p {
+    font-size: 0.9em;
+    color: hsl(233, 8%, 62%);
+    line-height: 1.4;
+    padding-right: 25%;
+}
+.content button {
+    margin-top: 10px;
+}
+.phones {
+    overflow: hidden;
+}
+.phones img {
+    width: 100%;
+    margin-top: -110px;
+    margin-left: 50px;
+}
+
+/* Part Three */
+
+.partThree {
+    width: 100%;
+    height: 80%;
+}
+.partThree .inner {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+.whyCon {
+    width: 100%;
+    text-align: left;
+}
+.whyCon h1 {
+    color: hsl(233, 26%, 24%);
+    font-weight: 400;
+    font-size:2em;
+}
+.whyCon p {
+    font-size: 1em;
+    padding-right: 45%;
+}
+.features {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.features .box {
+    width: 22%;
+    height: 100%;
+    padding: 10px 10px 20px 0px;
+}
+.box h2 {
+    font-size: 1.3em;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+}
+.box p {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: hsl(233, 8%, 62%);
+}

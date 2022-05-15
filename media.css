@@ -1,0 +1,115 @@
+@media screen and (max-width:800px) {
+    .partOne .menu{ width: 95%; }
+    .comLogo img { width: 100px; }
+    .navigations { width: 50%; }
+    .reqButton { width: 30%; }
+    .navigations nav a {
+        margin: 5px;
+        font-size: 0.8em;
+    }
+    .navigations nav a:hover,
+    .navigations nav .active {
+        text-underline-offset: 18px;
+    }
+    .comLogo { 
+        width: 20%;
+        justify-content: start;
+    }
+    .reqButton button {
+        width: 80%;
+        padding: 12px;
+        font-size: 0.7em;
+    }
+    .partTwo {
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .nextGen {
+        width: 100%;
+        order: 2;
+    }
+    .content {
+        text-align: center;
+        padding: 10px;
+    }
+    .content h1 { font-size: 2em;}
+    .content p { font-size: 0.8em;}
+    .content h1 ,
+    .content p {
+        padding:0px;
+    }
+    .phones {
+        width: 100%;
+    }
+    .phones img {
+        margin-left: 0;
+    }
+    .whyCon {
+        text-align: center;
+        padding: 20px;
+    }
+    .whyCon p {
+        padding-right: 0;
+        font-size: 0.9em;
+    }
+    .whyCon h1 {
+        font-size: 1.5em;
+    }
+    .features {
+        flex-direction: column;
+    }
+    .features .box {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:550px) {
+    .partOne {
+        padding-top: 10px;
+    }
+    .navigations,
+    .reqButton { display: none; }
+    .comLogo,
+    .hamburger {
+        width: 50%;
+    }
+    .comLogo img { 
+        width:150px; 
+    }
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .mobMenu {
+        width: 90%;
+        margin-top: 20px;
+        left: 5%;
+        right: 5%;
+        position: absolute;
+        background-color: lightblue;
+        border-radius: 10px;
+        padding: 5px 0px 5px 0px;
+    }
+    .mobMenu nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobMenu nav a {
+        color: black;
+        text-align: center;
+        padding: 5px 0px 5px;
+        width: 70%;
+        font-size: 1.1em;
+        text-decoration: none;
+        margin: 10px 0px 10px 0px;
+    }
+    .mobMenu nav a:hover {
+        cursor: pointer;
+        background-color: #eee;
+    }
+        
+}
