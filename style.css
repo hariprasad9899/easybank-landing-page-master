@@ -6,7 +6,6 @@
 }
 html,body,main {
     width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -16,11 +15,25 @@ html,body,main {
 main {
     position: relative;
 }
+.stop-scrolling {
+    height: 100vh;
+    overflow: hidden;
+}
+.bgBlur {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.456);
+}
+/* Part One */
+
 .partOne {
     width: 100%;
     z-index: 3;
     padding: 10px 0px 0px 0px;
-    border: 1px solid black;
     background-color: white;
 }
 .partOne .menu {
@@ -47,6 +60,9 @@ main {
 }
 .reqButton {
     width: 30%;
+}
+.hamburger img:hover {
+    cursor: pointer;
 }
 .navigations nav a {
     color: hsl(233, 8%, 62%);
@@ -79,6 +95,7 @@ button:hover {
     text-underline-offset: 22px;
     text-decoration-thickness: 4px;
     color: black;
+    font-weight: 500;
 }
 .navigations nav a:hover {
     text-decoration-color: hsl(136, 46%, 56%);
@@ -93,6 +110,10 @@ button:hover {
     width: 100%;
     display: flex;
     margin-left: 5%;
+    background: url(./images/bg-intro-desktop.svg) right no-repeat;
+    background-size:contain;
+    background-position-x: 130%;
+    background-position-y: -80px;
 }
 
 .nextGen {
@@ -106,7 +127,7 @@ button:hover {
 }
 .content {
     width: 90%;
-    border: 1px solid black;
+    margin-top: -60px;
 }
 .content h1 {
     font-size: 3em;
@@ -235,6 +256,10 @@ button:hover {
 .innerCon h3 {
     font-size: 0.9em;
 }
+.innerCon h3:hover {
+    cursor: pointer;
+    color: hsl(136, 65%, 51%);
+}
 .innerCon p {
     font-size: 0.7em;
 }
@@ -254,7 +279,6 @@ button:hover {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    border: 1px solid white;
 }
 .fbox {
     flex-grow: 1;
@@ -270,6 +294,9 @@ button:hover {
     color: white;
     margin: 10px;
     font-size: 1.2em;
+}
+.social nav a i:hover {
+    color:  hsl(136, 65%, 51%);
 }
 .social nav a i:nth-child(1) {
     margin-left: 0px;
@@ -291,9 +318,16 @@ button:hover {
     margin: 10px;
     margin-left: 0px;
 }
+.optionsOne nav a:hover {
+    cursor: pointer;
+    color: hsl(136, 65%, 51%);
+}
 .req {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+}
+.req p {
+    font-size: 0.9em;
 }

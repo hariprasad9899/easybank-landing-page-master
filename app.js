@@ -2,7 +2,8 @@ const btn = document.getElementById('btn');
 const mobMenu = document.getElementsByClassName('mobMenu')[0];
 const menuBtn = [...document.getElementsByClassName('menuBtn')];
 const mobNav = document.getElementById('mobNav');
-const mob = document.getElementById('mob');
+const bgBlur = document.getElementsByClassName('bgBlur')[0];
+const myBody = document.body
 
 for(let eachElem of menuBtn) {
     eachElem.addEventListener('click', ()=> {
@@ -19,10 +20,14 @@ btn.onclick = function() {
         btn.src = "./images/icon-close.svg";
         btn.classList.replace('open','close');
         mobMenu.style.display = "block";
+        document.body.classList.add("stop-scrolling")
+        bgBlur.style.display = "block";
     } else {
         btn.src = "./images/icon-hamburger.svg";
         btn.classList.replace('close','open');
         mobMenu.style.display = "none";
+        document.body.classList.remove("stop-scrolling")
+        bgBlur.style.display = "none";
     }
 }
 
@@ -41,6 +46,8 @@ window.addEventListener('click', (e)=> {
             btn.src = "./images/icon-hamburger.svg";
             btn.classList.replace('close','open');
             mobMenu.style.display = "none";
+            document.body.classList.remove("stop-scrolling")
+            bgBlur.style.display = "none";
         }
     }
 })
