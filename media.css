@@ -77,7 +77,19 @@
     }
     .articles .abox {
         width: 100%;
-        background-color: red;
+    }
+    .innerPart {
+        flex-direction: column;
+    }
+    .social {
+        align-items: center;
+    }
+    .optionsOne {
+        text-align: center;
+        justify-content: center;
+    }
+    .req {
+        align-items: center;
     }
 }
 @media screen and (max-width:550px) {
