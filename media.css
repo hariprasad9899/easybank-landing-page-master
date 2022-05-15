@@ -63,6 +63,22 @@
         text-align: center;
         padding: 10px;
     }
+    .partFour .wrapper {
+        width: 95%;
+    }
+    .header {
+        text-align: center;
+    }
+    .articles {
+        width: 90%;
+        flex-direction: column;
+        gap: 20px;
+        margin: auto;
+    }
+    .articles .abox {
+        width: 100%;
+        background-color: red;
+    }
 }
 @media screen and (max-width:550px) {
     .partOne {
@@ -87,10 +103,12 @@
         margin-top: 20px;
         left: 5%;
         right: 5%;
+        top: 10%;
         position: absolute;
-        background-color: lightblue;
+        background-color: white;
         border-radius: 10px;
         padding: 5px 0px 5px 0px;
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.43);
     }
     .mobMenu nav {
         display: flex;

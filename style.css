@@ -13,7 +13,9 @@ html,body,main {
     background-color: hsl(0, 0%, 98%);
     font-family: 'Public Sans', sans-serif;
 }
-
+main {
+    position: relative;
+}
 .partOne {
     width: 100%;
     z-index: 3;
@@ -134,11 +136,9 @@ button:hover {
 
 .partThree {
     width: 100%;
-    height: 80%;
 }
 .partThree .inner {
     width: 90%;
-    height: 100%;
     margin: auto;
 }
 .whyCon {
@@ -173,4 +173,69 @@ button:hover {
     font-size: 0.9em;
     font-weight: 400;
     color: hsl(233, 8%, 62%);
+}
+
+/* Part four */
+
+.partFour {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.partFour .wrapper {
+    width: 90%;
+    margin: auto;
+}
+.header {
+    width: 100%;
+}
+.header h1 {
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+}
+.articles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.articles .abox {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+}
+.imgBox {
+    width: 100%;
+    min-height: 200px;
+    background-color: antiquewhite;
+}
+.imgBox img {
+    width: 100%;
+    height: 100%;
+}
+.imgBox,
+.imgBox img,
+.abox {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.conBox {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 253, 253);
+}
+.innerCon {
+    width: 100%;
+    padding-right: 10px;
+}
+.innerCon small {
+    font-size: 0.7em;
+}
+.innerCon h3 {
+    font-size: 0.9em;
+}
+.innerCon p {
+    font-size: 0.7em;
 }
